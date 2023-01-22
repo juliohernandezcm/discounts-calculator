@@ -1,0 +1,30 @@
+{
+	"name": "taller-matematicas-javascript",
+	"version": "1.0.0",
+	"description": "Taller práctico de matematicas y estadistica básica con JavaScript",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.[t|j]sx?$": "babel-jest"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/juliohernandezcm/taller-matematicas-javascript.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/juliohernandezcm/taller-matematicas-javascript/issues"
+	},
+	"homepage": "https://github.com/juliohernandezcm/taller-matematicas-javascript#readme",
+	"devDependencies": {
+		"@babel/preset-env": "^7.20.2",
+		"babel-jest": "^29.3.1",
+		"jest": "^29.3.1"
+	}
+}
