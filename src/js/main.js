@@ -45,5 +45,10 @@ const calculateDiscountWithCoupon = () => {
 
 	let totalPrice = priceWithDiscount(price, percentDiscount);
 
+	if (percentDiscount === 0) {
+		totalPriceCoupons.value = `Cupón invalido`;
+		return;
+	}
+
 	totalPriceCoupons.value = totalPrice;
 };
