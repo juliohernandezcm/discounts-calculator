@@ -1,8 +1,10 @@
 import { getPercentDiscount } from '../src/js/coupon.js';
 
 describe('get discount value', () => {
-	test('it should when price and percentage are greater than zero', () => {
-		expect(getPercentDiscount('discount88')).toEqual(0);
+	test('Coupon not found', () => {
+		expect(() => {
+			getPercentDiscount('discount88');
+		}).toThrow('Coupon not found');
 		expect(getPercentDiscount('discount20')).toEqual(20);
 		expect(getPercentDiscount('discount30')).toEqual(30);
 		expect(getPercentDiscount('discount40')).toEqual(40);

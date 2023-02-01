@@ -13,7 +13,8 @@ export function getPercentDiscount(couponName) {
 	console.log(`Coupon.getPercentDiscount couponInArray: ${couponInArray}`);
 
 	if (!couponInArray) {
-		return result;
+		console.log(`Coupon.getPercentDiscount couponName: ${couponName}`);
+		throw new Error('Coupon not found');
 	}
 
 	result = couponInArray.percent;
